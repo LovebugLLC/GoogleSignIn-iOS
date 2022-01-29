@@ -24,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8FD9FDD827A60A3700338DC8 /* SignInSample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SignInSample.entitlements; sourceTree = "<group>"; };
 		C15484C022FCB34100C76691 /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
 		C1E69225264315E7004CE2BC /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C1E69226264315E7004CE2BC /* SignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInViewController.m; sourceTree = "<group>"; };
@@ -132,6 +133,7 @@
 		D99924C11A92B3C7008CC226 = {
 			isa = PBXGroup;
 			children = (
+				8FD9FDD827A60A3700338DC8 /* SignInSample.entitlements */,
 				C1E6923C2643162E004CE2BC /* SignInSample-Info.plist */,
 				C1E69224264315E7004CE2BC /* Source */,
 				C1E6925226431E12004CE2BC /* Resources */,
@@ -443,6 +445,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SignInSample.entitlements;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					..,
@@ -454,6 +458,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.google.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 			};
 			name = Debug;
 		};
@@ -461,6 +467,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SignInSample.entitlements;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					..,
@@ -472,6 +480,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.google.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 			};
 			name = Release;
 		};
